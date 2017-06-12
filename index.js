@@ -148,7 +148,7 @@ const ScrollableTabView = React.createClass({
 
   renderScrollableContent() {
     const scenes = this._composeScenes();
-    return <Animated.ScrollView
+    return <ScrollView
       horizontal
       pagingEnabled
       automaticallyAdjustContentInsets={false}
@@ -173,7 +173,7 @@ const ScrollableTabView = React.createClass({
       {...this.props.contentProps}
       >
       {scenes}
-    </Animated.ScrollView>;
+    </ScrollView>;
   },
 
   _composeScenes() {
